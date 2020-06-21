@@ -1,0 +1,11 @@
+{
+    "namespace":"cn.tedu.pojo",//namespace对应了java中package
+    "type":"record",//record对应了java中的class
+    "name":"User",//定义类名
+    "fields":
+    [
+    {"name":"username","type":"string"},//private String name;
+    {"name":"age","type":"int"},
+    {"name":"gender","type":"string"}
+    ]
+}
