@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BigBigData.iml" filepath="$PROJECT_DIR$/BigBigData.iml" />
       <module fileurl="file://$PROJECT_DIR$/HDFS/HDFS.iml" filepath="$PROJECT_DIR$/HDFS/HDFS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/javase.iml" filepath="$PROJECT_DIR$/javase/javase.iml" />
     </modules>
   </component>
 </project>
