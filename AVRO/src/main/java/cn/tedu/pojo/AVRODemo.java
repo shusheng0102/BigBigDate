@@ -52,9 +52,9 @@ public class AVRODemo {
     //反序列化
     public void deserial() throws IOException {
         //一、获取反序列化流
-        DatumReader<User> dr=new SpecificDatumReader<>(User.class);
+        DatumReader<User> dr=new SpecificDatumReader<User>(User.class);
         //二、读---获取一个文件流，将序列化文件读出
-        DataFileReader<User> dfr=new DataFileReader<>(new File("C:\\a.txt"),dr);
+        DataFileReader<User> dfr=new DataFileReader<User>(new File("C:\\a.txt"),dr);
         //三、AVRO将这个文件流设计成一个迭代器模式--可以遍历对象
         while(dfr.hasNext()){
             User u=dfr.next();

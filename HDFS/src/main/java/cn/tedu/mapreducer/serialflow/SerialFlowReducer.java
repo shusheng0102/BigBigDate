@@ -17,7 +17,7 @@ public class SerialFlowReducer
     @Override
     protected void reduce(Text key, Iterable<Flow> values, Context context) throws IOException, InterruptedException {
         // 去重
-        Set<String> set = new HashSet<>();
+        Set<String> set = new HashSet<String>();
         for (Flow value : values) {
             set.add(value.getAddr());
         }

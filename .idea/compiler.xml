@@ -2,17 +2,21 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="HDFS" />
+        <module name="privatetest" />
         <module name="AVRO" />
+        <module name="HDFS" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AVRO" target="1.6" />
+      <module name="BigBigData" target="1.5" />
       <module name="HDFS" target="1.5" />
+      <module name="privatetest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
