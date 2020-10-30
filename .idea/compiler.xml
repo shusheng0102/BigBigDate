@@ -7,16 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="privatetest" />
-        <module name="AVRO" />
         <module name="HDFS" />
+        <module name="zk" />
+        <module name="AVRO" />
+        <module name="privatetest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AVRO" target="1.6" />
-      <module name="BigBigData" target="1.5" />
-      <module name="HDFS" target="1.5" />
+      <module name="BigBigData" target="1.8" />
+      <module name="HDFS" target="1.8" />
       <module name="privatetest" target="1.8" />
+      <module name="zk" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
