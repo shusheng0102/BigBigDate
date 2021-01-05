@@ -21,10 +21,11 @@ public class Client {
         // 因为设置为非阻塞,所以需要手动判断连接是否建立
         // 如果连接多次都没有成功,则说明这个连接无法建立
         // 如果连接无法建立,放弃连接并且提示异常
-        while (!sc.isConnected())
-            // finishConnect这个方法在底层会自动计数
-            sc.finishConnect();
 
+        while (!sc.isConnected()) {
+            // finishConnect这个方法在底层会自动计数  20-30
+            sc.finishConnect();
+        }
         // 如果连接成功
         // 给服务器端发送数据
         // 需要将数据封装到ByteBuffer中

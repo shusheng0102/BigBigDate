@@ -9,11 +9,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="HDFS" />
         <module name="zk" />
-        <module name="D_AVRO" />
+        <module name="AVRO" />
         <module name="privatetest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AVRO" target="1.6" />
       <module name="BigBigData" target="1.8" />
       <module name="D_AVRO" target="1.6" />
       <module name="HDFS" target="1.8" />

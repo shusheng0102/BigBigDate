@@ -14,13 +14,14 @@ public class BufferDemo1 {
         // 获取操作位
         System.out.println(buffer.position());
         // 获取限制位
-        System.out.println(buffer.limit());
+        System.out.println("limit1:"+buffer.limit());
 
         // 添加元素
         buffer.put("abc".getBytes());
         buffer.put((byte) 0);
         buffer.put("def".getBytes());
         System.out.println(buffer.position());
+        System.out.println("limit2:"+buffer.limit());
         // 挪动操作位
         // buffer.position(0);
 
@@ -36,11 +37,12 @@ public class BufferDemo1 {
         // buffer.position(0);
         // 翻转缓冲区:
         buffer.flip();
-
+        System.out.println("limit3:"+buffer.limit());
+        //遍历缓冲区
         // while (buffer.position() < buffer.limit()) {
-        // 等价于
-        while (buffer.hasRemaining()) {
-            byte b=buffer.get();
+        //e 等价于
+            while (buffer.hasRemaining()) {
+                byte b=buffer.get();
             System.out.print((char) b);
 
         }
