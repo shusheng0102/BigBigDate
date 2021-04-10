@@ -1,6 +1,6 @@
 package cn.tcgl.nio.channel;
 
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

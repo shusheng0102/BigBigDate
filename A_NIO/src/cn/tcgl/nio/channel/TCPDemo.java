@@ -20,7 +20,7 @@ public class TCPDemo {
     public void client() throws IOException {
 
         // 开启客户端通道
-        SocketChannel sc = SocketChannel.open();
+        SocketChannel sc = getChannel();
         // 可以手动设置为非阻塞模式
         sc.configureBlocking(false);
         // 发起连接
@@ -35,7 +35,11 @@ public class TCPDemo {
         sc.close();
     }
 
-//    服务器端
+    private SocketChannel getChannel() throws IOException {
+        return SocketChannel.open();
+    }
+
+    //    服务器端
     @Test
     public void server() throws IOException {
 
