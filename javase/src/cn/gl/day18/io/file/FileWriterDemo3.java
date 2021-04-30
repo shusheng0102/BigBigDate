@@ -7,7 +7,7 @@ import java.io.FileWriter;
  */
 public class FileWriterDemo3 {
     public static void main(String[] args) {
-        //从jdk1.7出现的--- try-with-resources
+        //从jdk1.7出现的--- try-with-main.resources
         //自动进行关流
         try(FileWriter writer=new FileWriter("D:\\2.txt")){
             writer.write("anc");

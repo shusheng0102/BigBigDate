@@ -10,6 +10,7 @@
         <module name="HDFS" />
         <module name="zk" />
         <module name="AVRO" />
+        <module name="Log_Gl" />
         <module name="privatetest" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="BigBigData" target="1.8" />
       <module name="D_AVRO" target="1.6" />
       <module name="HDFS" target="1.8" />
+      <module name="Log_Gl" target="1.8" />
       <module name="privatetest" target="1.8" />
       <module name="zk" target="1.8" />
     </bytecodeTargetLevel>
