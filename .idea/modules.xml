@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/Log_Gl/Log_Gl.iml" filepath="$PROJECT_DIR$/Log_Gl/Log_Gl.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/javase.iml" filepath="$PROJECT_DIR$/javase/javase.iml" />
       <module fileurl="file://$PROJECT_DIR$/privatetest/privatetest.iml" filepath="$PROJECT_DIR$/privatetest/privatetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_log/springboot_log.iml" filepath="$PROJECT_DIR$/springboot_log/springboot_log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_log4j2/springboot_log4j2.iml" filepath="$PROJECT_DIR$/springboot_log4j2/springboot_log4j2.iml" />
       <module fileurl="file://$PROJECT_DIR$/C_Zookeeper/zk.iml" filepath="$PROJECT_DIR$/C_Zookeeper/zk.iml" />
     </modules>
   </component>

@@ -123,5 +123,18 @@ public class JULTest {
         logger1.fine("fine");
         logger1.finer("finer");
         logger1.finest("finest");
+
+
+        Logger logger2 = Logger.getLogger("test");
+
+        // 2.日志记录输出
+        logger2.severe("severe会尽快的时间开发 test");
+        logger2.warning("warning尽快回复山东矿机 test");
+        logger2.info("info按实际的记录卡1 test");
+        logger2.config("config圣诞节开发好舒服 test");
+        logger2.fine("fine test");
+        logger2.finer("finer test" );
+        logger2.finest("finest  test");
+
     }
 }

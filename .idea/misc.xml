@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/Zookeeper/pom.xml" />
         <option value="$PROJECT_DIR$/C_Zookeeper/pom.xml" />
         <option value="$PROJECT_DIR$/D_AVRO/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_log/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_log4j2/pom.xml" />
       </list>
     </option>
   </component>
