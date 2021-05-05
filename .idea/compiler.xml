@@ -14,6 +14,7 @@
         <module name="springboot_log4j2" />
         <module name="AVRO" />
         <module name="Log_Gl" />
+        <module name="J_scala" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
       <module name="BigBigData" target="1.8" />
       <module name="D_AVRO" target="1.6" />
       <module name="HDFS" target="1.8" />
+      <module name="J_scala" target="1.8" />
       <module name="Log_Gl" target="1.8" />
       <module name="privatetest" target="1.8" />
       <module name="springboot_log" target="1.8" />

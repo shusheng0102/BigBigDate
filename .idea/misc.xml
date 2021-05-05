@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/D_AVRO/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_log/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_log4j2/pom.xml" />
+        <option value="$PROJECT_DIR$/J_scala/pom.xml" />
       </list>
     </option>
   </component>

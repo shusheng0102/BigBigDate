@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/B_Concurrent/B_Concurrent.iml" filepath="$PROJECT_DIR$/B_Concurrent/B_Concurrent.iml" />
       <module fileurl="file://$PROJECT_DIR$/BigBigData.iml" filepath="$PROJECT_DIR$/BigBigData.iml" />
       <module fileurl="file://$PROJECT_DIR$/HDFS/HDFS.iml" filepath="$PROJECT_DIR$/HDFS/HDFS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/J_scala/J_scala.iml" filepath="$PROJECT_DIR$/J_scala/J_scala.iml" />
       <module fileurl="file://$PROJECT_DIR$/Log_Gl/Log_Gl.iml" filepath="$PROJECT_DIR$/Log_Gl/Log_Gl.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/javase.iml" filepath="$PROJECT_DIR$/javase/javase.iml" />
       <module fileurl="file://$PROJECT_DIR$/privatetest/privatetest.iml" filepath="$PROJECT_DIR$/privatetest/privatetest.iml" />

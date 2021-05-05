@@ -8,6 +8,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class SpringbootLog4j2ApplicationTests {
     public static final Logger LOGGER = LoggerFactory.getLogger(SpringbootLog4j2ApplicationTests.class);
+
+    public static void main(String[] args) {
+
+    }
     @Test
     void contextLoads() {
         for (int i = 0; i < 100000; i++) {
