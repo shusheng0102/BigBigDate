@@ -17,7 +17,7 @@ object FunctionDemo3 {
   def sum(arr: Int*) = {
     var sum = 0
     for (i <- 0 until arr.length)
-      sum += i
+      sum += arr(i)
     sum
   }
 

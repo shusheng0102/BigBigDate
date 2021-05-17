@@ -7,7 +7,8 @@ import scala.io.StdIn
 object IfDemo {
 
   def main(args: Array[String]): Unit = {
-    var i =StdIn.readLine()
+    var i =
+
     println("我输入的是什么："+i)
     implicit def str2int(str:String) : Int = {
 

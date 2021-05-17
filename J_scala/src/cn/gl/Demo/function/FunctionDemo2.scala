@@ -12,5 +12,10 @@ object FunctionDemo2 {
     for (i <- 1 to m)
       println("*" * n)
   }
+  def random1To10()=(Math.random()*10+1).toInt
+
+  def main(args: Array[String]): Unit = {
+    println(random1To10)
+  }
 
 }
