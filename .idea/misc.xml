@@ -6,12 +6,11 @@
         <option value="$PROJECT_DIR$/AVRO/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Zookeeper/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot_log/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot_log4j2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Log_Gl/pom.xml" />
         <option value="$PROJECT_DIR$/privatetest/pom.xml" />
       </set>
     </option>
