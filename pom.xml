@@ -4,15 +4,117 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>groupId</groupId>
+    <groupId>com.shusheng</groupId>
     <artifactId>BigBigData</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>${revision}</version>
     <modules>
-
+        <module>clickhouse-manager</module>
     </modules>
 
-    <dependencies>
+    <properties>
+        <revision>1.0.1.101</revision>
+        <antlr.version>4.9.1</antlr.version>
+        <guava.version>23.0</guava.version>
+        <lombok.version>1.18.20</lombok.version>
+        <slf4j.version>1.7.36</slf4j.version>
+        <log4j.version>2.9.1</log4j.version>
+        <springboot.version>2.7.7</springboot.version>
+        <clickhouse.version>0.3.2</clickhouse.version>
+        <junit.version>5.8.0-RC1</junit.version>
+    </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-parent</artifactId>
+                <version>${springboot.version}</version>
+                <!--
+                    此配置即声明了 Spring Boot 的版本信息，
+                    注意其中还有 type（打包类型） 和 scope 标签，
+                    import 表示当前项目的依赖可用于另外一个项目，
+                    并且 import 范围只有在 denpendencyManagement 元素下才有效果，
+                    由于其范围有特殊性，一般都是指向打包类型为 pom 的模块。
+                -->
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-slf4j-impl</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <!--异步日志依赖-->
+            <dependency>
+                <groupId>com.lmax</groupId>
+                <artifactId>disruptor</artifactId>
+                <version>3.3.4</version>
+            </dependency>
+
+            <dependency>
+                <groupId>yandex.clickhouse</groupId>
+                <artifactId>clickhouse-jdbc</artifactId>
+                <scope>${clickhouse.version}</scope>
+            </dependency>
+
+            <dependency>
+                <!-- will stop using ru.yandex.clickhouse starting from 0.4.0 -->
+                <groupId>com.clickhouse</groupId>
+                <artifactId>clickhouse-jdbc</artifactId>
+                <version>0.3.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.vintage</groupId>
+                <artifactId>junit-vintage-engine</artifactId>
+                <version>5.9.2</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-engine</artifactId>
+                <version>1.9.2</version>
+                <scope>test</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
