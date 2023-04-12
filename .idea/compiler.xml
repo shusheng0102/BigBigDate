@@ -8,8 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot_log" />
-        <module name="privatetest" />
-        <module name="HDFS" />
         <module name="springboot_log4j2" />
         <module name="Log_Gl" />
       </profile>
