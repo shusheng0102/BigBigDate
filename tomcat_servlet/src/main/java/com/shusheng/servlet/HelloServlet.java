@@ -1,5 +1,7 @@
 package com.shusheng.servlet;
 
+import com.shusheng.ReaderBodyHttpServletRequest;
+
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
@@ -7,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.xml.ws.RequestWrapper;
 import java.io.IOException;
 import java.sql.Time;
 import java.text.SimpleDateFormat;
@@ -32,6 +35,9 @@ public class HelloServlet extends HttpServlet {
         String appId = req.getHeader("appId");
         System.out.println(appId);
 
+        ReaderBodyHttpServletRequest requestBody = (ReaderBodyHttpServletRequest) req;
+        String requestBody1 = requestBody.getRequestBody();
+        System.out.println(requestBody1);
 
 
         //控制台输出hello world
