@@ -7,27 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="clickhouse-manager" />
+        <module name="Demo2" />
+        <module name="tomcat_servlet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="AVRO" target="1.6" />
       <module name="BigBigData" target="1.8" />
-      <module name="clickhouse-manager" target="1.8" />
-      <module name="D_AVRO" target="1.6" />
-      <module name="HDFS" target="1.5" />
-      <module name="J_scala" target="1.8" />
-      <module name="Log_Gl" target="1.8" />
-      <module name="privatetest" target="1.8" />
-      <module name="springboot_log" target="1.8" />
-      <module name="springboot_log4j2" target="1.8" />
-      <module name="zk" target="1.5" />
+      <module name="Demo2" target="1.8" />
+      <module name="tomcat_servlet" target="1.8" />
     </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="springboot_log" options="-parameters" />
-      <module name="springboot_log4j2" options="-parameters" />
-    </option>
   </component>
 </project>

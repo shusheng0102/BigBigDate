@@ -1,0 +1,28 @@
+GET http://127.0.0.1:8080/hello_servlet/hello
+Accept: application/json
+###
+
+GET http://127.0.0.1:8080/hello_servlet/hello?appid=1003
+Accept: application/json
+###
+
+POST http://127.0.0.1:8080/hello_servlet/hello
+Content-Type: application/x-www-form-urlencoded
+appId: 1001
+
+{
+  "id": 999,
+  "value": "content"
+}
+
+name=NicholasA
+
+> {%
+ client.test("hello",function(){
+     client.log("Testing Interface:/hello_servlet/hello");
+     client.log(response.body);
+     client.assert(response.status===200,"response status is not 200");
+    //client.assert(response.body==="Hello World!","response body is not \"Hello World!\"");
+ })
+ %}
+###

@@ -1,0 +1,34 @@
+POST http://127.0.0.1:8080/hello_servlet/hello
+#Content-Type: application/x-www-form-urlencoded
+Content-Type: multipart/form-data;boundary=WebAppBoundary
+appId: 1001
+
+--WebAppBoundary
+
+Content-Disposition: form-data; name="instanceId" Content-Type: text/plain 155
+
+--WebAppBoundary
+
+Content-Disposition: form-data; name="type" Content-Type: text/plain 1
+
+--WebAppBoundary
+
+Content-Disposition: form-data; name="userId" Content-Type: text/plain < F:/a.txt
+
+--WebAppBoundary
+
+Content-Disposition: form-data; name="files"; filename="test.png" Content-Type: image/png< F:/test.png
+
+--WebAppBoundary--
+
+name=shushengFile
+
+> {%
+ client.test("hello",function(){
+     client.log("Testing Interface:/hello_servlet/hello");
+     client.log(response.body);
+     client.assert(response.status===200,"response status is not 200");
+    //client.assert(response.body==="Hello World!","response body is not \"Hello World!\"");
+ })
+ %}
+###

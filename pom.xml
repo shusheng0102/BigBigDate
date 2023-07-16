@@ -7,9 +7,11 @@
     <groupId>com.shusheng</groupId>
     <artifactId>BigBigData</artifactId>
     <packaging>pom</packaging>
-    <version>${revision}</version>
+<!--    <version>${revision}</version>-->
+    <version>1.0.1.101</version>
     <modules>
-        <module>clickhouse-manager</module>
+        <module>tomcat_servlet</module>
+        <module>Demo2</module>
     </modules>
 
     <properties>
@@ -35,6 +37,25 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.eclipse.jetty.orbit</groupId>
+                <artifactId>javax.servlet</artifactId>
+                <version>3.0.0.v201112011016</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.24</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>3.1.0</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-parent</artifactId>
