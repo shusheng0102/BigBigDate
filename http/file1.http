@@ -20,3 +20,26 @@ name=shushengFile
  })
  %}
 ###
+
+POST http://127.0.0.1:8080/shusheng/upload
+#Content-Type: application/x-www-form-urlencoded
+Content-Type: multipart/form-data;boundary=WebAppBoundary
+appId: 1001
+
+--WebAppBoundary--
+Content-Disposition: form-data; name="userId"; filename="a.txt"
+Content-Type: text/plain
+< F:/a.txt
+
+--WebAppBoundary--
+name=shushengFile
+
+> {%
+ client.test("upload",function(){
+     client.log("Testing Interface:/shusheng/upload");
+     client.log(response.body);
+     client.assert(response.status===200,"response status is not 200");
+    //client.assert(response.body==="Hello World!","response body is not \"Hello World!\"");
+ })
+ %}
+###

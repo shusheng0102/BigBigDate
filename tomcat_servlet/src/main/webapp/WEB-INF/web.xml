@@ -16,9 +16,19 @@
             <param-value>123456</param-value>
         </init-param>
     </servlet>
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <display-name>UploadServlet</display-name>
+        <servlet-class>com.shusheng.servlet.UploadServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HelloServlet123</servlet-name>
-        <url-pattern>/hello_servlet</url-pattern>
+        <url-pattern>/shusheng/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/shusheng/upload</url-pattern>
     </servlet-mapping>
 
 </web-app>

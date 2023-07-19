@@ -17,9 +17,9 @@ public class DoFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         ServletRequest requestWrapper = null;
-        if (servletRequest instanceof HttpServletRequest) {
+/*        if (servletRequest instanceof HttpServletRequest) {
             requestWrapper = new ReaderBodyHttpServletRequest((HttpServletRequest) servletRequest);
-        }
+        }*/
         if (requestWrapper == null) {
             filterChain.doFilter(servletRequest, servletResponse);
         } else {
