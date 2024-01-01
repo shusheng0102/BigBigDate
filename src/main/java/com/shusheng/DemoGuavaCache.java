@@ -1,4 +1,4 @@
-package com.chenj;
+package com.shusheng;
 
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
@@ -61,11 +61,6 @@ public class DemoGuavaCache {
             } catch (Exception ignored) {
             }
         }).start();
-
-
-
-
-
 
     }
 

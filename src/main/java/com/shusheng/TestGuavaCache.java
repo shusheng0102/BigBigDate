@@ -1,9 +1,8 @@
-package com.chenj;
+package com.shusheng;
 
 import com.google.common.cache.*;
 import org.junit.Test;
 
-import java.sql.Time;
 import java.util.Iterator;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
