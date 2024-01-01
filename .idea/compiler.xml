@@ -7,8 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Demo2" />
-        <module name="tomcat_servlet" />
+        <module name="BigBigData" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

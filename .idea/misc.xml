@@ -13,8 +13,10 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Demo2/pom.xml" />
         <option value="$PROJECT_DIR$/Log_Gl/pom.xml" />
         <option value="$PROJECT_DIR$/privatetest/pom.xml" />
+        <option value="$PROJECT_DIR$/tomcat_servlet/pom.xml" />
       </set>
     </option>
   </component>
